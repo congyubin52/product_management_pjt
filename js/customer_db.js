@@ -17,6 +17,6 @@ addCustomer(3, "란희", "ll@.com", "010-1234-1234", now);
 addCustomer(4, "승석", "ll@.com", "010-1234-1234", now);
 addCustomer(5, "보영", "ll@.com", "010-1234-1234", now);
 
-for (let i = 1; i <= customerDB.size; i++) {
-  console.log(customerDB.get(i).c_name);
-}
+const searchCustomer = (id) => {
+  return customerDB.get(id);
+};
