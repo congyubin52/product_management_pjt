@@ -28,7 +28,7 @@ const addEvents = () => {
 };
 
 const listTable = () => {
-  //   console.log(product[1]);
+  console.log("listTable() CALLED!!!");
   let tbody = document.querySelector("tbody");
   tbody.innerHTML = ``;
   saleDB.forEach(function (key, value) {
@@ -61,5 +61,6 @@ const listTable = () => {
               
     </tr>
     `;
+    console.log("SUCCESS");
   });
 };
