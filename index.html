@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    
+    <script src="./js/utils.js"></script>
+    <script src="./js/sale.js"></script>
+    
+    <script src="./js/customer_db.js"></script>
+    <script src="./js/db.js"></script>
+  
+    <script src="./js/index.js"></script>
+    
+
+
+    <!-- <script src="./js/sale_db.js"></script> -->
+  </head>
+  <body>
+    <div id="wrap">
+      <!--타이틀-->
+      <div class="title">상품 판매 등록</div>
+
+      <!--상품 등록-->
+      <div class="container">
+        <div class="c_id">
+          <span>고객 아이디</span
+          ><input type="text" placeholder="INPUT CUSTOMER ID" />
+        </div>
+
+        <div class="p_no">
+          <span>상품 번호</span
+          ><input type="text" placeholder="INPUT PRODUCT NO" />
+        </div>
+
+        <div class="s_price">
+          <span>판매 금액</span
+          ><input type="text" placeholder="INPUT SALES PRICE" />
+        </div>
+
+        <!--등록, 초기화 버튼-->
+        <div class="btn">
+          <button class="s_reg_btn">상품 판매 등록</button>
+          <button class="reset_btn">초기화</button>
+        </div>
+      </div>
+
+      <!--상품 판매 리스트 화면-->
+      <div class="list_view">
+        <table>
+          <thead>
+            <tr>
+              <th>고객 계정</th>
+              <th>고객 이름</th>
+              <th>고객 메일</th>
+              <th>거객 연락처</th>
+              <th>고객 가입일</th>
+              <th>상품 번호</th>
+              <th>상품 이름</th>
+              <th>상품 가격</th>
+              <th>상품 수량</th>
+              <th>상품 등록일</th>
+              <th>제조사 번호</th>
+              <th>제조사 이름</th>
+              <th>제조사 주소</th>
+              <th>제조사 연락처</th>
+              <th>제조사 관리자</th>
+              <th>제조사 등록일</th>
+              <th>판매 번호</th>
+              <th>판매 가격</th>
+              <th>판매 날짜</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>계정</td>
+              <td>이름</td>
+              <td>메일</td>
+              <td>연락처</td>
+              <td>가입일</td>
+              <td>번호</td>
+              <td>이름</td>
+              <td>가격</td>
+              <td>수량</td>
+              <td>등록일</td>
+              <td>번호</td>
+              <td>이름</td>
+              <td>주소</td>
+              <td>연락처</td>
+              <td>관리자</td>
+              <td>등록일</td>
+              <td>번호</td>
+              <td>가격</td>
+              <td>날짜</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./js/viewChange.js"></script>
+  </body>
+</html>
+
+<template id="msg_item">
+  <div class="txt"></div>
+</template>
