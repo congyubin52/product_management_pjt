@@ -32,8 +32,11 @@
     width: 100px;
     display: inline-block;
     font-size: 1.1em;
-    margin-right: 15px;
+    margin-right: 10px; /* 바꿈 */
+    padding-right: 10px; /* 추가 */
     border-right: 1px solid #dadada;
+    text-align: right; /* 추가 */
+
   }
 
   #wrap > div.container input {
@@ -60,8 +63,9 @@
 
   /* 상품 판매 리스트 화면 */
   #wrap div.list_view {
-    /* display: none; */
+    display: none;
     text-align: center;
+    margin-top: 30px; /* 추가 */
     
   }
   #wrap div.list_view table {
