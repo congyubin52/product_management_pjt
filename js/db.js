@@ -58,7 +58,12 @@ addManufacture(3,'C제조사', 'CCC시 ccc구 456-789', '010-4567-5236', 'C대�
 addManufacture(4,'D제조사', 'DDD시 ddd구 120-345', '010-4968-1597', 'D대리');
 addManufacture(5,'E제조사', 'EEE시 eee구 678-301', '010-1968-2389', 'E대리');
 
+const searchManufacture = (m_no) => {
 
+
+    return manufactureDB.get(m_no);
+
+};
 //add to sale table
 
 const addSale = (s_no, c_id, p_no, s_price, s_reg_date, s_mod_date) => {
@@ -72,4 +77,12 @@ const addSale = (s_no, c_id, p_no, s_price, s_reg_date, s_mod_date) => {
         s_reg_date: s_reg_date,
         s_mod_date: s_mod_date
     })
+};
+
+
+const searchSale = (s_no) => {
+
+
+    return saleDB.get(s_no);
+
 };
