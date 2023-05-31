@@ -6,11 +6,11 @@ const saleDB = new Map();
 
 //add to product table
 
-const addProduct = (p_id, m_id, p_name, p_price, p_quantity, p_reg_date, p_mod_date) => {
+const addProduct = (p_no, m_no, p_name, p_price, p_quantity, p_reg_date, p_mod_date) => {
 
-    productDB.set(p_id, {
-        p_id: p_id, 
-        m_id: m_id,
+    productDB.set(p_no, {
+        p_no: p_no, 
+        m_no: m_no,
         p_name: p_name,
         p_price: p_price,
         p_quantity: p_quantity,
@@ -21,11 +21,18 @@ const addProduct = (p_id, m_id, p_name, p_price, p_quantity, p_reg_date, p_mod_d
 };
 
 
-addProduct(1,1,'A상품', 10000, 50);
-addProduct(2,2,'B상품', 500, 100);
-addProduct(3,3,'C상품', 15000, 20);
-addProduct(4,4,'D상품', 20000, 10);
-addProduct(5,5,'E상품', 30000, 30);
+addProduct(1,1,'A상품', 10000, 50, now, now);
+addProduct(2,2,'B상품', 500, 100, now, now);
+addProduct(3,3,'C상품', 15000, 20, now, now);
+addProduct(4,4,'D상품', 20000, 10, now, now);
+addProduct(5,5,'E상품', 30000, 30, now, now);
+
+const searchProduct = (p_no) => {
+
+
+    return productDB.get(p_no);
+
+};
 
 
 //add to manufacture table

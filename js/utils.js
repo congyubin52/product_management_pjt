@@ -1,3 +1,5 @@
+let s_no = 0;
+
 const getTime = () => {
   let today = new Date();
 

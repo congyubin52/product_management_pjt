@@ -8,4 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const init = () => {
     console.log('init() CALLED!!!');
 
+
+    addEvents();
+
 }
