@@ -8,9 +8,9 @@ const addEvents = () => {
     let c_id = parseInt(document.querySelector("div.c_id input").value);
     let p_no = parseInt(document.querySelector("div.p_no input").value);
     let s_price = parseInt(document.querySelector("div.s_price input").value);
-
-    addSale(s_no, c_id, p_no, s_price, now, now);
-    console.log(s_no, c_id, p_no, s_price, now, now);
+    let s_now = getTime();
+    addSale(s_no, c_id, p_no, s_price, s_now, s_now);
+    console.log(s_no, c_id, p_no, s_price, s_now, s_now);
     console.log("addSale SUCESS!!!");
 
     s_no++;
@@ -23,6 +23,7 @@ const addEvents = () => {
 
     resetBtn.addEventListener("click", function () {
       saleDB.clear();
+      s_no = 1;
     });
   });
 };

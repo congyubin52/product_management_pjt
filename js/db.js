@@ -16,11 +16,11 @@ const addCustomer = (id, name, mail, phone, regDate) => {
 
   console.log(customerDB.get(id));
 };
-addCustomer(1, "재희1", "ll@.com", "010-1234-1234", now);
-addCustomer(2, "재희2", "ll@.com", "010-1234-1234", now);
-addCustomer(3, "재희3", "ll@.com", "010-1234-1234", now);
-addCustomer(4, "재희4", "ll@.com", "010-1234-1234", now);
-addCustomer(5, "재희5", "ll@.com", "010-1234-1234", now);
+addCustomer(1, "재희1", "ll@.com", "010-1234-1234", getTime());
+addCustomer(2, "재희2", "ll@.com", "010-1234-1234", getTime());
+addCustomer(3, "재희3", "ll@.com", "010-1234-1234", getTime());
+addCustomer(4, "재희4", "ll@.com", "010-1234-1234", getTime());
+addCustomer(5, "재희5", "ll@.com", "010-1234-1234", getTime());
 
 const searchCustomer = (id) => {
   return customerDB.get(id);
