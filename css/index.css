@@ -1,82 +1,81 @@
 #wrap {
-    width: 1600px;
-    margin: 0 auto;
-  }
+  width: 1600px;
+  margin: 0 auto;
+}
 
-  /* 타이틀 */
+/* 타이틀 */
 #wrap > div.title {
-    width: 800px;
-    margin: 30px auto;
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 2em;
-    font-weight: bold;
-    border-bottom: 3px dashed #dadada;
-  }
+  width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 3px dashed #dadada;
+}
 
-  /* 상품 등록 */
-  #wrap > div.container {
-    width: 800px;
-    margin: 0 auto;
-    border: 1px solid #dadada;
-  }
+/* 상품 등록 */
+#wrap > div.container {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #dadada;
+}
 
-  #wrap > div.container > div {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #dadada;
-  }
+#wrap > div.container > div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+}
 
-  #wrap > div.container span {
-    width: 100px;
-    display: inline-block;
-    font-size: 1.1em;
-    margin-right: 15px;
-    border-right: 1px solid #dadada;
-  }
+#wrap > div.container span {
+  width: 100px;
+  display: inline-block;
+  font-size: 1.1em;
+  margin-right: 15px;
+  border-right: 1px solid #dadada;
+}
 
-  #wrap > div.container input {
-    padding: 10px;
-    width: 400px;
-    border: 1px solid #dadada;
-    border-radius: 5px;
-  }
-  /* 등록, 초기화 버튼 */
-  #wrap > div.container div.btn {
-    display: flex;
-    justify-content: center;
-  }
+#wrap > div.container input {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+/* 등록, 초기화 버튼 */
+#wrap > div.container div.btn {
+  display: flex;
+  justify-content: center;
+}
 
-  #wrap > div.container div.btn button {
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid #dadada;
-    border-radius: 5px;
-    color: #242424;
-    font-weight: bold;
-    cursor: pointer;
-  }
+#wrap > div.container div.btn button {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  color: #242424;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  /* 상품 판매 리스트 화면 */
-  #wrap div.list_view {
-    /* display: none; */
-    text-align: center;
-    
-  }
-  #wrap div.list_view table {
-    border-collapse: collapse;
-  }
+/* 상품 판매 리스트 화면 */
+#wrap div.list_view {
+  display: none;
+  text-align: center;
+}
+#wrap div.list_view table {
+  border-collapse: collapse;
+}
 
-  #wrap div.list_view th {
-    border: 1px solid #dadada;
-    background-color: #f2f2f2;
-    padding: 5px 10px;
-    font-size: .7em;
-  }
+#wrap div.list_view th {
+  border: 1px solid #dadada;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  font-size: 0.7em;
+}
 
-  #wrap div.list_view td {
-    border: 1px solid #dadada;
-    padding: 5px 10px;
-    font-size: .7em;
-  }
+#wrap div.list_view td {
+  border: 1px solid #dadada;
+  padding: 5px 10px;
+  font-size: 0.7em;
+}
